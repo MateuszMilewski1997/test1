@@ -1,0 +1,100 @@
+<HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Projekt 4: Marek Michaluk</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	
+	<script type="text/javascript" src="jquery.jcarousel-core.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="container">
+<div id="logo">
+Projekt nr. 4
+</div>
+
+<div id="nawigacja">
+
+</div>
+
+<div id="nagłówek">
+<div class="tucks">
+</div>
+<div class="tekst"><span class="tytuł">Opis zadania</span><br/><br/>
+	Strona na zaliczenie projektu nr 4 opisujący przykładowy plugin javascript/jQuery<br>
+	Strona opisuje zastosowanie i instalacje jCarousel<br>
+	Jest to plugin który pozwala nam na prezenyacje grafik na stronie w postaci slidera.
+</div> <div style="clear:both"></div>
+</div>
+
+<div id="część główna">
+<div id="sidebar">
+<div id="home" class="optionL">Home</div>	
+<div id="instalacja" class="optionL">Instalacja</div>
+<div id="przyklad" class="optionL">Przykład</div>
+<div id="case_study" class="optionL">Case study</div>
+
+
+</div>
+<div id="content">
+	<h1>Co to jest jQuery?</h1>
+	<h3>
+		jQuery to biblioteka JavaScript, która ułatwia manipulację elementami i zdarzeniami w dokumencie HTML. Upraszcza wybieranie elementów z drzewa DOM, manipulacje nimi (np. kopiowanie, usuwanie ukrywanie, zmianę kolejności i właściwości) oraz animację i upraszcza korzystanie z AJAX (ang. Asynchronous JavaScript and XML).
+
+		<br><br>W praktyce, jQuery dostarcza gotowych, często wykorzystywanych funkcji w skryptach JavaScript dzięki czemu:
+
+		<ul>
+			<li>upraszcza/ułatwia/przyspiesza pracę programiście</li>
+			<li>zwiększa kompatybilność kodu pod kątem wielu platform i wersji przeglądarek.</li>
+		</ul>
+		<br>
+		Mottem tej biblioteki jest „write less do more” czyli pisz mniej rób więcej i jest to bardzo trafne zdanie, które w zasadzie tłumaczy wszystko o jQuery.
+
+	</h3>
+
+</div>
+<div style="clear:both"></div>
+</div>
+
+<div id="footer">
+Projekt 4 - Marek Michaluk
+</div>
+
+</div>
+
+</body>
+
+<script>
+	
+	$( "#home" ).click(function() {
+		$("#content").empty();
+		$("#content").load('zakładki/home.html');
+	});
+
+	$( "#instalacja" ).click(function() {
+		$("#content").empty();
+		$("#content").load('zakładki/instalacja.html');
+	});
+
+	$( "#przyklad" ).click(function() {
+		$("#content").empty();
+		$("#content").load('zakładki/przyklad.html');
+	});
+
+	$( "#case_study" ).click(function() {
+		$("#content").empty();
+		$("#content").load('zakładki/Case_study.html');
+	});
+
+
+
+</script>
+
+</html>
+
